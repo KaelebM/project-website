@@ -1,3 +1,5 @@
+import Aura from '@primevue/themes/aura';
+
 export default defineNuxtConfig({
     modules: ["@nuxtjs/tailwindcss", "@primevue/nuxt-module"],
 
@@ -12,6 +14,7 @@ export default defineNuxtConfig({
         },
         usePrimeVue: true,        
         importTheme: { from: "@/themes/site-theme.js" },
+            preset : Aura
     },
     css: ["primeicons/primeicons.css"],
     compatibilityDate: "2024-10-21",
